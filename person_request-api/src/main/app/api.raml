@@ -1,0 +1,27 @@
+#%RAML 1.0
+title: person_request_api
+baseUri: https://dev-person-system-service.cloudhub.io/{version}
+version: v1
+protocols:  [ HTTPS ]
+mediaType:  [ application/json]
+
+types: 
+  findPersonAsyncType: !include libraries/body.raml
+
+traits: 
+  secured: !include traits/secured.raml  
+  
+/personrequest:
+  post:
+    body:
+      application/json:
+        properties:
+          findPersonAsync: findPersonAsyncType
+        example: !include examples/PersonRequest.json
+    responses:
+      200:
+        description: 
+      503:
+        description:      
+/organizationrequest:
+

@@ -1,0 +1,30 @@
+{
+  "findPersonAsync": {
+    "findCriteria": {
+      "fetchStart": "",
+      "fetchSize": "",
+      "filter": {
+        "conjunction": "",
+        "group": [
+          {
+            "conjunction": "",
+            "upperCaseCompare": "",
+            "item": [
+              {
+                "conjunction": "",
+                "upperCaseCompare": "",
+                "attribute": "",
+                "operator": "",
+                "value": ""
+              }
+            ]
+          }
+        ],
+        "nested": ""
+      }
+    },
+    "findControl": {
+      "retrieveAllTranslations": ""
+    }
+  }
+}

@@ -1,0 +1,22 @@
+#%RAML 1.0 DataType
+type: object
+properties:
+  fetchStart:
+    type: string
+    required: true
+  fetchSize:
+    type: string
+    required: true
+  filter:
+    type: object
+    properties:
+      conjunction: 
+        type: string
+        required: true
+      group: !include group.raml
+      nested:
+        type: string
+        required: true
+
+          
+

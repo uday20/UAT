@@ -1,0 +1,27 @@
+{
+      "findPersonAsync": {
+         "findCriteria": {
+            "fetchStart": "0",
+            "fetchSize": "-1",
+            "filter": {
+               "conjunction": "And",
+               "group": [{
+                  "conjunction": "And",
+                  "upperCaseCompare": "false",
+                  "item": [{
+                     "conjunction": "And",
+                     "upperCaseCompare": "false",
+                     "attribute": "LastUpdateDate",
+                     "operator": "AFTER",
+                     "value": "2019-03-04T00:00:00.0Z"
+                  }]
+               }],
+               "nested": null
+            },
+            "findControl": {
+               "retrieveAllTranslations": "false"
+            }
+         }
+      }
+  
+}
